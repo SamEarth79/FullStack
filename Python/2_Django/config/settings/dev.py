@@ -22,3 +22,4 @@ DATABASES = {
 
 # Print emails to console instead of sending them
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+MIDDLEWARE += ['apps.blog.middleware.RequestTimingMiddleware']
