@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello from nginx static!</h1>
+    <button onclick="fetch('/api/hello').then(r=>r.json()).then(d=>alert(d.msg))">
+      Call FastAPI
+    </button>
+  </body>
+</html>
